@@ -1,4 +1,5 @@
 	<section id="cercle">
+        <h1>les personnages principaux</h1>
 	<hr>
 		<article class="rang1"> <!-- ligne numero 1 des perso -->
 			<ul>

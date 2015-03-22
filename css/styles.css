@@ -5,7 +5,7 @@
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
     display: block;
 }
 body {
@@ -133,20 +133,20 @@ header nav ul li:not(#logoNav) a:hover{
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {
-    0%   {background:; left:-50%; top:99%;}
-    25%  {background:; left:-15%; top:99%;}
-    50%  {background:; left:20%; top:99%;}
-    75%  {background:; left:45%; top:99%;}
-    100% {background:; left:65%; top:99%;}
+    0%   {/*background:;*/ left:-50%; top:99%;}
+    25%  {/*background:; */left:-15%; top:99%;}
+    50%  {/*background:;*/ left:20%; top:99%;}
+    75%  {/*background:;*/ left:45%; top:99%;}
+    100% {/*background:;*/ left:65%; top:99%;}
 }
 
 /* Standard syntax */
 @keyframes myfirst {
-   0%   {background:; left:0%; top:100%;}
-    25%  {background:; left:25%%; top:100%;}
-    50%  {background:; left:50%; top:100%;}
-    75%  {background:; left:75%; top:100%;}
-    100% {background:; left:100%; top:100%;}
+   0%   {/*background:;*/ left:0%; top:100%;}
+    25%  {/*background:;*/ left:25%; top:100%;}
+    50%  {/*background:;*/ left:50%; top:100%;}
+    75%  {/*background:;*/ left:75%; top:100%;}
+    100% {/*background:;*/ left:100%; top:100%;}
 }
 
 /*VIDEO BACKGROUND*/
@@ -157,7 +157,7 @@ video#bgvid {
     min-width: 100%;
     height: calc(100vh - 70px);
     width: 100%; 
-    background: url() no-repeat;
+   /* background: url() no-repeat;*/
     background-size: cover;
     opacity: .2;
 }
@@ -168,7 +168,7 @@ video {
 
 /*LOGO VIDEO
 */
-div.logoVideo{
+.logoVideo{
     background: url(../img/logo.png) no-repeat center;
     width: 400px;
     height: 200px;
@@ -236,7 +236,7 @@ h2#sortie{
 
 /*PAUSE*/
 .myButton{
-    background: url() no-repeat;
+    /*background: url() no-repeat;*/
     margin:0 auto;
     width:300px;
     height:300px;
@@ -358,7 +358,7 @@ div#synopsis p{
 
 @media screen and (max-device-width: 800px) {
 
-html { background: url() #000 no-repeat center center fixed; }
+html { background: #000 no-repeat center center fixed; }
 
 #bgvid { display: none; }
 
@@ -384,17 +384,26 @@ div#content img.thor{
 video, #teaser {
     margin: 0 auto;
     display: block;
-    box-shadow: 0 0 3 black;
+    /*box-shadow: 0 0 3 rgba(0, 0, 0, 0.99);*/
 }
-div.teaser h2{
+
+.teaser h1{
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 3%;
-    font-family: 'Righteous', sans-serif;
+    padding-top: 8%;
+    font-family: "Righteous",sans-serif;
     font-size: 20px;
     letter-spacing: 3px;
     font-weight: 200;
-    text-shadow:0 0 4px white;
+    text-shadow: 0px 0px 4px #FFF;
+}
+.teaser h2{
+    text-align: center;
+    padding: 1%;
+    font-family: "Righteous",sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    text-shadow: 0px 0px 4px #FFF;
 }
 .teaser{
     height:50em;
@@ -477,7 +486,7 @@ section{
         width:90%;
 }
 section article {
-    margin-top: 100px;
+   /* margin-top: 100px;*/
 }
 
 section h2 {
@@ -527,6 +536,15 @@ section article .radius {
 
 section#personnages{
     margin-top: 50%;
+}
+#cercle h1{
+    text-align: center;
+    padding-top: 8%;
+    font-family: "Righteous",sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    text-shadow: 0px 0px 4px #FFF;
 }
 
 section#personnages div section{
@@ -655,6 +673,40 @@ section#personnages div{
     
 }
 
+.jssort01 .w {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.jssort01 .c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 68px;
+    height: 68px;
+    border: #000 2px solid;
+}
+
+.jssort01 .p:hover .c, .jssort01 .pav:hover .c, .jssort01 .pav .c {
+    background: url(../img/t01.png) center center;
+    border-width: 0px;
+    top: 2px;
+    left: 2px;
+    width: 68px;
+    height: 68px;
+}
+
+.jssort01 .p:hover .c, .jssort01 .pav:hover .c {
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    border: #fff 1px solid;
+}
+
        /*         FOOOTER*/
 footer {
     background:rgba(65, 2, 2, 0.9);
@@ -670,7 +722,7 @@ footer {
 .term ul li {
     display: inline-block;
     margin:13px 10px 0 5px;
-    vertical-align: center;
+    vertical-align: middle;
 }
 .term ul li:first-child {
     padding-left: 10px;

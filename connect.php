@@ -7,7 +7,7 @@
  */
 /*CONNEXION A LA BASE DE DONNEE*/
 try{
-    $db = new mysqli( 'localhost', 'root', '', 'cms' );
+    $db = new mysqli( 'localhost', 'root', 'root', 'avengers' );
 }catch(mysqli_sql_exception $e){
     die('Probleme de connexion');
 }

@@ -10,7 +10,7 @@
             
 <!--            LOGO-->
            
-    <div class="logoVideo"></div>
+    <h1 class="logoVideo"></h1>
        
         
 <!--            annonce de temps-->
